@@ -24,6 +24,7 @@ def make_gapi_request():
         timestamp = result["datetime"]
 
         print(f"\nPrecio: ${price}\nTiempo: {timestamp}")
+        
     except requests.exceptions.RequestException as e:
         print(f"\n[ERRROR] {str(e)}\n")
 
