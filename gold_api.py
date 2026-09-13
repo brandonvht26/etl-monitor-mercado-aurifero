@@ -1,7 +1,7 @@
 from decouple import config
 import requests
 
-def make_gapi_request():
+def make_gold_api_request():
     api_key = config('GOLD_API_KEY')
     symbol = "XAU"
     curr = "USD"
@@ -21,12 +21,13 @@ def make_gapi_request():
         result = response.json()
 
         price = result["price"]
-        timestamp = result["datetime"]
+        datetime = result["datetime"]
 
-        print(f"\nPrecio: ${price}\nTiempo: {timestamp}")
+        return (datetime, price)
         
     except requests.exceptions.RequestException as e:
         print(f"\n[ERRROR] {str(e)}\n")
+        return None
 
 if __name__ == "__main__":
-    make_gapi_requests()
+    make_gold_api_request()
