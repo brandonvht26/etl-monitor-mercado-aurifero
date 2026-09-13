@@ -1,1 +1,8 @@
+# VARIABLES DE ENTORNO
 .env
+
+# BASES DE DATOS
+*.db
+
+# VARIOS
+.vscode
