@@ -28,4 +28,4 @@ if __name__ == "__main__":
     try:
         run_monitor()
     except KeyboardInterrupt:
-        print("\n[SALIDA] Monitor detenido manualmente. Cerrando sistema de forma segura...\n")
+        print("\n[SALIDA] Monitor detenido manualmente. Cerrando sistema de forma segura...")

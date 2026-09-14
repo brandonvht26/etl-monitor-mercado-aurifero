@@ -1,0 +1,5 @@
+[theme]
+primaryColor = "#d4af37" # Dorado
+backgroundColor = "#a49d22b5" # Fondo oscuro
+secondaryBackgroundColor = "#262730" # Paneles laterales
+textColor = "#fafafa" # Texto claro
