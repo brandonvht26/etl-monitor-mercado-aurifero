@@ -9,7 +9,7 @@ def run_monitor():
 
     while True:
         if not is_market_open():
-            print(f"[SISTEMA] Mercado Forex cerrado en fin de semana. Pausando monitor por 1 hora...")
+            print(f"[SISTEMA] Mercado Forex cerrado en fin de semana. Pausando monitor por 15 minutos...")
             time.sleep(900)
             continue
 
